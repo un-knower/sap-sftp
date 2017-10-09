@@ -101,3 +101,4 @@ logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
 logging.level.org.hibernate.type.descriptor.sql.BasicExtractor=TRACE    
 logging.level.com.hcicloud.sap=DEBUG   
 logging.file=spring.log
+haha
