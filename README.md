@@ -56,7 +56,6 @@ insert into config(id,cron) values(11,'0 30 22 * * ?');
 /home/mhn/voiceftp/success/2017/09/1/zip/20170901_success_1_0.txt
 /home/mhn/voiceftp/success/2017/09/1/zip/20170901_success_1_0.zip
 3.远程文件夹
-在观澜机器（51.3）上登录，ssh 172.16.44.40  密码：sZ3cdguqq
 远程成功单文本位置
 /nfsc/gcc_wer_id364676_fvol1001_prd/SpeechAnalytics/sinovoice/text/success/2017/09/1/20170901_success_1_0.txt
 /nfsc/gcc_wer_id364676_fvol1001_prd/SpeechAnalytics/sinovoice/text/success/2017/09/1/20170901_success_1_0.zip
