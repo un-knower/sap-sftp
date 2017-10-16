@@ -37,7 +37,7 @@ public class SuccessVoiceJob implements Job {
 
     //磁盘的根目录下的子目录   /nfsc/gcc……/下的   同时前面不能加 "/"  后面必须有 "/"
     private static String remoteVoicePath = "";
-    private static int totalNum = 50000;  //一个包中的个数
+    private static int totalNum = 10000;  //一个包中的个数
     private static int singleNum = 10;  //一次查5000条数据
 
     private Logger logger = Logger.getLogger(SuccessVoiceJob.class);
@@ -83,7 +83,7 @@ public class SuccessVoiceJob implements Job {
             if (total == 0) {
                 return;
             }
-            int sheetNum =(int)total/10000+1;
+            int sheetNum =(int)total/totalNum+1;
             System.out.println("一共导出zip包为：" + sheetNum +"**************success**************" + nowTime.getTime());
             logger.info("一共导出zip包为：" + sheetNum +"**************success**************" + nowTime.getTime());
 
@@ -139,9 +139,10 @@ public class SuccessVoiceJob implements Job {
                         localName = localPathUnZip + fileName + i + "_" + fileNameSend + File.separator + callTime + "_" + voiceId + ".txt";
 
                         //写入文件
-                        FileUtils.writeFile(localName,callContent,false);
-                        String textMeg = callTime + "_" + voiceId + ".txt" +"\r\n";
-                        FileUtils.writeFile(localPathZip + fileName + i + "_" + fileNameSend +".txt",textMeg,true);
+                        if (FileUtils.writeFile(localName,callContent,false)) {
+                            String textMeg = callTime + "_" + voiceId + ".txt" +"\r\n";
+                            FileUtils.writeFile2(localPathZip + fileName + i + "_" + fileNameSend +".txt",textMeg,true);
+                        }
                     }
                     Thread.sleep(200);
                 }

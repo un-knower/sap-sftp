@@ -92,7 +92,44 @@ public class FileUtils {
      */
     public static boolean writeFile(String filePath, String content, boolean append) {
         if (StringUtils.isEmpty(content)) {
-//            return false;
+            return false;
+        }
+
+        if(isFileExist(filePath)){
+            return false;
+        }
+
+        FileWriter fileWriter = null;
+        try {
+            makeDirs(filePath);
+            fileWriter = new FileWriter(filePath, append);
+            fileWriter.write(content);
+//            System.out.println("文本写入成功" + filePath);
+            return true;
+        } catch (IOException e) {
+            System.out.println("文件写入失败"+filePath);
+            System.out.println("失败文件的大小为：" + FileUtils.getFileSize(filePath));
+            System.out.println(content);
+            throw new RuntimeException("IOException occurred. ", e);
+        } finally {
+            IOUtils.close(fileWriter);
+        }
+    }
+
+    /**
+     * write file
+     *
+     * @param filePath
+     * @param content
+     * @param append is append, if true, write to the end of file, else clear content of file and write into it
+     * @return return false if content is empty, true otherwise
+     * @throws RuntimeException if an error occurs while operator FileWriter
+     *
+     * @des 这里是写入内容到txt，不判断文件是否存在
+     */
+    public static boolean writeFile2(String filePath, String content, boolean append) {
+        if (StringUtils.isEmpty(content)) {
+            return false;
         }
 
         FileWriter fileWriter = null;

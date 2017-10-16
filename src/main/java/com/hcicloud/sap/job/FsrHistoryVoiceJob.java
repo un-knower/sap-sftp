@@ -6,6 +6,7 @@ import com.hcicloud.sap.service.VoiceService;
 import com.hcicloud.sap.vo.AnnoyModel;
 import com.hcicloud.sap.vo.Grid;
 import com.hcicloud.sap.vo.VoiceVo;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -158,9 +159,10 @@ public class FsrHistoryVoiceJob implements Job {
                                 localName = localPathUnZip + fileName + i + "_" + fileNameSend + File.separator + callTime + "_" + voiceId + ".txt";
 
                                 //写入文件
-                                FileUtils.writeFile(localName,callContent,false);
-                                String textMeg = callTime + "_" + voiceId + ".txt" +"\r\n";
-                                FileUtils.writeFile(localPathZip + fileName + i + "_" + fileNameSend +".txt",textMeg,true);
+                                if (FileUtils.writeFile(localName,callContent,false)) {
+                                    String textMeg = callTime + "_" + voiceId + ".txt" +"\r\n";
+                                    FileUtils.writeFile2(localPathZip + fileName + i + "_" + fileNameSend +".txt",textMeg,true);
+                                }
                             }
 //                            Thread.sleep(500);
                         }

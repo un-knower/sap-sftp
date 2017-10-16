@@ -8760,3 +8760,499 @@ Caused by: org.h2.jdbc.JdbcSQLException: Database is already closed (to disable 
 2017-10-09 14:27:57.545  INFO 6688 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
 2017-10-09 14:27:57.545  INFO 6688 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
 2017-10-09 14:27:57.546  INFO 6688 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 19:37:46.141 ERROR 16692 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 19:37:46.154 ERROR 16692 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 19:37:46.155 ERROR 16692 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 19:37:46.155 ERROR 16692 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 19:37:46.155 ERROR 16692 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 19:37:46.498  INFO 16692 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 16692 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 19:37:46.499  INFO 16692 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 19:37:47.377  INFO 16692 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 19:37:47 CST 2017]; root of context hierarchy
+2017-10-13 19:37:51.314  INFO 16692 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 19:37:51.342  INFO 16692 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 28 ms.
+2017-10-13 19:37:51.344  INFO 16692 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 19:37:51.349  INFO 16692 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 5 ms.
+2017-10-13 19:37:51.636  INFO 16692 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 19:37:51.695  INFO 16692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 19:37:52.078  INFO 16692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 19:37:52.080  INFO 16692 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 19:37:52.091  INFO 16692 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 19:37:52.260  INFO 16692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 19:37:52.760  INFO 16692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 19:37:53.292  WARN 16692 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 19:37:53.729  INFO 16692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 19:37:54.378  INFO 16692 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 19:37:54.399  INFO 16692 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 19:37:54.400  INFO 16692 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 19:37:54.401  INFO 16692 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 19:37:54.402  INFO 16692 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 19:37:54.403  INFO 16692 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 19:37:54.403  INFO 16692 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 19:37:54.404  INFO 16692 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@2fd39436
+2017-10-13 19:37:55.354  INFO 16692 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 19:37:47 CST 2017]; root of context hierarchy
+2017-10-13 19:37:55.517  INFO 16692 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 19:37:55.520  INFO 16692 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 19:37:55.521  INFO 16692 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 19:37:55.575  INFO 16692 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 19:37:55.575  INFO 16692 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 19:37:55.641  INFO 16692 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 19:37:55.689  WARN 16692 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 19:37:56.480  INFO 16692 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 19:37:56.481  INFO 16692 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 19:37:56.490  INFO 16692 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 19:37:56.537  INFO 16692 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 19:37:56.599  INFO 16692 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 10.944 seconds (JVM running for 13.402)
+2017-10-13 19:37:56.867  INFO 16692 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 19:37:47 CST 2017]; root of context hierarchy
+2017-10-13 19:37:56.877  INFO 16692 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 19:37:56.878  INFO 16692 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 19:37:56.879  INFO 16692 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 19:37:56.879  INFO 16692 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 19:37:56.880  INFO 16692 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 19:37:56.880  INFO 16692 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:50:20.345 ERROR 18340 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 20:50:20.350 ERROR 18340 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 20:50:20.351 ERROR 18340 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 20:50:20.351 ERROR 18340 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 20:50:20.351 ERROR 18340 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 20:50:20.487  INFO 18340 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 18340 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 20:50:20.489  INFO 18340 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 20:50:20.761  INFO 18340 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:50:20 CST 2017]; root of context hierarchy
+2017-10-13 20:50:23.191  INFO 18340 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 20:50:23.231  INFO 18340 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 39 ms.
+2017-10-13 20:50:23.235  INFO 18340 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 20:50:23.251  INFO 18340 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 15 ms.
+2017-10-13 20:50:23.717  INFO 18340 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:50:23.746  INFO 18340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 20:50:23.881  INFO 18340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 20:50:23.884  INFO 18340 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 20:50:23.886  INFO 18340 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 20:50:23.974  INFO 18340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 20:50:24.301  INFO 18340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 20:50:24.706  WARN 18340 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 20:50:25.018  INFO 18340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:50:25.464  INFO 18340 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 20:50:25.487  INFO 18340 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 20:50:25.488  INFO 18340 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 20:50:25.490  INFO 18340 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 20:50:25.492  INFO 18340 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 20:50:25.492  INFO 18340 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 20:50:25.493  INFO 18340 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 20:50:25.494  INFO 18340 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@7a31ca20
+2017-10-13 20:50:26.264  INFO 18340 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:50:20 CST 2017]; root of context hierarchy
+2017-10-13 20:50:26.381  INFO 18340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 20:50:26.385  INFO 18340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 20:50:26.387  INFO 18340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 20:50:26.440  INFO 18340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:50:26.441  INFO 18340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:50:26.510  INFO 18340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:50:26.606  WARN 18340 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 20:50:27.353  INFO 18340 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 20:50:27.353  INFO 18340 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 20:50:27.364  INFO 18340 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 20:50:27.373  INFO 18340 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 20:50:27.389  INFO 18340 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 7.44 seconds (JVM running for 8.43)
+2017-10-13 20:50:27.588  INFO 18340 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:50:20 CST 2017]; root of context hierarchy
+2017-10-13 20:50:27.591  INFO 18340 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 20:50:27.592  INFO 18340 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 20:50:27.593  INFO 18340 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 20:50:27.593  INFO 18340 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 20:50:27.594  INFO 18340 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 20:50:27.595  INFO 18340 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:50:27.596  WARN 18340 --- [pool-2-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90098, SQLState: 90098
+2017-10-13 20:50:27.597 ERROR 18340 --- [pool-2-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : The database has been closed [90098-196]
+2017-10-13 20:50:27.598  INFO 18340 --- [pool-2-thread-1] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command : org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+2017-10-13 20:50:27.617 ERROR 18340 --- [pool-2-thread-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.hibernate.SessionException: Session is closed!
+	at org.hibernate.internal.AbstractSessionImpl.errorIfClosed(AbstractSessionImpl.java:132) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionImpl.setCacheMode(SessionImpl.java:1498) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:1109) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.find(AbstractEntityManagerImpl.java:1039) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.sun.proxy.$Proxy85.find(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findOne(SimpleJpaRepository.java:241) ~[spring-data-jpa-1.11.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:504) ~[spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:489) ~[spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461) ~[spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56) ~[spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282) ~[spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) [spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) [spring-data-jpa-1.11.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) [spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) [spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.sun.proxy.$Proxy87.findOne(Unknown Source) [na:na]
+	at com.hcicloud.sap.quartz.ScheduleRefreshDatabase.scheduleUpdateCronTrigger(ScheduleRefreshDatabase.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_144]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_144]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_144]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-10-13 20:50:27.622 ERROR 18340 --- [pool-2-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:519) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:310) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:162) ~[spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:145) ~[spring-tx-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.7.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.sun.proxy.$Proxy87.findOne(Unknown Source) ~[na:na]
+	at com.hcicloud.sap.quartz.ScheduleRefreshDatabase.scheduleUpdateCronTrigger(ScheduleRefreshDatabase.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_144]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_144]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_144]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-10-13 20:53:49.853 ERROR 19648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 20:53:49.856 ERROR 19648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 20:53:49.857 ERROR 19648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 20:53:49.857 ERROR 19648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 20:53:49.857 ERROR 19648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 20:53:49.961  INFO 19648 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 19648 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 20:53:49.961  INFO 19648 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 20:53:50.238  INFO 19648 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:53:50 CST 2017]; root of context hierarchy
+2017-10-13 20:53:52.579  INFO 19648 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 20:53:52.618  INFO 19648 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 39 ms.
+2017-10-13 20:53:52.622  INFO 19648 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 20:53:52.631  INFO 19648 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 8 ms.
+2017-10-13 20:53:52.791  INFO 19648 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:53:52.823  INFO 19648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 20:53:52.968  INFO 19648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 20:53:52.970  INFO 19648 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 20:53:52.973  INFO 19648 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 20:53:53.067  INFO 19648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 20:53:53.464  INFO 19648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 20:53:53.735  WARN 19648 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 20:53:54.003  INFO 19648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 20:53:54.429  INFO 19648 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 20:53:54.444  INFO 19648 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 20:53:54.445  INFO 19648 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 20:53:54.447  INFO 19648 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 20:53:54.448  INFO 19648 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 20:53:54.448  INFO 19648 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 20:53:54.449  INFO 19648 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 20:53:54.449  INFO 19648 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@6b27b2d0
+2017-10-13 20:53:55.177  INFO 19648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:53:50 CST 2017]; root of context hierarchy
+2017-10-13 20:53:55.280  INFO 19648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 20:53:55.284  INFO 19648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 20:53:55.284  INFO 19648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 20:53:55.331  INFO 19648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:53:55.331  INFO 19648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:53:55.392  INFO 19648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 20:53:55.509  WARN 19648 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 20:53:56.181  INFO 19648 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 20:53:56.182  INFO 19648 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 20:53:56.192  INFO 19648 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 20:53:56.201  INFO 19648 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 20:53:56.216  INFO 19648 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 6.859 seconds (JVM running for 7.773)
+2017-10-13 20:53:56.370  INFO 19648 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 20:53:50 CST 2017]; root of context hierarchy
+2017-10-13 20:53:56.371  INFO 19648 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 20:53:56.373  INFO 19648 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 20:53:56.373  INFO 19648 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 20:53:56.373  INFO 19648 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 20:53:56.374  INFO 19648 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 20:53:56.375  INFO 19648 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:20:04.965 ERROR 20428 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 21:20:04.968 ERROR 20428 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 21:20:04.969 ERROR 20428 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 21:20:04.969 ERROR 20428 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 21:20:04.969 ERROR 20428 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 21:20:05.037  INFO 20428 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 20428 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 21:20:05.038  INFO 20428 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 21:20:05.347  INFO 20428 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:20:05 CST 2017]; root of context hierarchy
+2017-10-13 21:20:07.720  INFO 20428 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 21:20:07.749  INFO 20428 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 28 ms.
+2017-10-13 21:20:07.752  INFO 20428 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 21:20:07.761  INFO 20428 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 9 ms.
+2017-10-13 21:20:07.918  INFO 20428 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:20:07.949  INFO 20428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 21:20:08.106  INFO 20428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 21:20:08.108  INFO 20428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 21:20:08.110  INFO 20428 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 21:20:08.185  INFO 20428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 21:20:08.628  INFO 20428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 21:20:09.070  WARN 20428 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 21:20:09.462  INFO 20428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:20:09.898  INFO 20428 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 21:20:09.919  INFO 20428 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 21:20:09.920  INFO 20428 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 21:20:09.921  INFO 20428 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 21:20:09.922  INFO 20428 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 21:20:09.923  INFO 20428 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 21:20:09.923  INFO 20428 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 21:20:09.923  INFO 20428 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@6b27b2d0
+2017-10-13 21:20:10.746  INFO 20428 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:20:05 CST 2017]; root of context hierarchy
+2017-10-13 21:20:10.865  INFO 20428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 21:20:10.869  INFO 20428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 21:20:10.870  INFO 20428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 21:20:10.923  INFO 20428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:20:10.924  INFO 20428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:20:11.001  INFO 20428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:20:11.060  WARN 20428 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 21:20:11.766  INFO 20428 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 21:20:11.766  INFO 20428 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 21:20:11.774  INFO 20428 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 21:20:11.779  INFO 20428 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 21:20:11.796  INFO 20428 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 7.255 seconds (JVM running for 8.308)
+2017-10-13 21:20:11.889  INFO 20428 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:20:05 CST 2017]; root of context hierarchy
+2017-10-13 21:20:11.891  INFO 20428 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 21:20:11.919  INFO 20428 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 21:20:11.920  INFO 20428 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 21:20:11.920  INFO 20428 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 21:20:11.922  INFO 20428 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 21:20:11.924  INFO 20428 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:49:23.465 ERROR 15864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 21:49:23.468 ERROR 15864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 21:49:23.468 ERROR 15864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 21:49:23.469 ERROR 15864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 21:49:23.469 ERROR 15864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 21:49:23.536  INFO 15864 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 15864 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 21:49:23.537  INFO 15864 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 21:49:23.888  INFO 15864 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:49:23 CST 2017]; root of context hierarchy
+2017-10-13 21:49:26.418  INFO 15864 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 21:49:26.462  INFO 15864 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 43 ms.
+2017-10-13 21:49:26.465  INFO 15864 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 21:49:26.476  INFO 15864 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 10 ms.
+2017-10-13 21:49:26.670  INFO 15864 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:49:26.701  INFO 15864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 21:49:26.815  INFO 15864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 21:49:26.817  INFO 15864 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 21:49:26.819  INFO 15864 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 21:49:26.879  INFO 15864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 21:49:27.326  INFO 15864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 21:49:27.646  WARN 15864 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 21:49:27.915  INFO 15864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:49:28.351  INFO 15864 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 21:49:28.365  INFO 15864 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 21:49:28.366  INFO 15864 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 21:49:28.367  INFO 15864 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 21:49:28.369  INFO 15864 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 21:49:28.369  INFO 15864 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 21:49:28.369  INFO 15864 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 21:49:28.369  INFO 15864 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@4a216eb4
+2017-10-13 21:49:29.110  INFO 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:49:23 CST 2017]; root of context hierarchy
+2017-10-13 21:49:29.213  INFO 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 21:49:29.217  INFO 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 21:49:29.218  INFO 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 21:49:29.269  INFO 15864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:49:29.269  INFO 15864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:49:29.458  INFO 15864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:49:29.531  WARN 15864 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 21:49:30.200  INFO 15864 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 21:49:30.201  INFO 15864 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 21:49:30.214  INFO 15864 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 21:49:30.222  INFO 15864 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 21:49:30.236  INFO 15864 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 7.269 seconds (JVM running for 8.318)
+2017-10-13 21:49:30.333  INFO 15864 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:49:23 CST 2017]; root of context hierarchy
+2017-10-13 21:49:30.335  INFO 15864 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 21:49:30.340  INFO 15864 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 21:49:30.342  INFO 15864 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 21:49:30.342  INFO 15864 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 21:49:30.351  INFO 15864 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 21:49:30.352  INFO 15864 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:54:58.265 ERROR 20364 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 21:54:58.268 ERROR 20364 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 21:54:58.269 ERROR 20364 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 21:54:58.269 ERROR 20364 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 21:54:58.269 ERROR 20364 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 21:54:58.412  INFO 20364 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 20364 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 21:54:58.412  INFO 20364 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 21:54:58.809  INFO 20364 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:54:58 CST 2017]; root of context hierarchy
+2017-10-13 21:55:00.985  INFO 20364 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 21:55:01.030  INFO 20364 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 44 ms.
+2017-10-13 21:55:01.033  INFO 20364 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 21:55:01.044  INFO 20364 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 11 ms.
+2017-10-13 21:55:01.262  INFO 20364 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:55:01.294  INFO 20364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 21:55:01.390  INFO 20364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 21:55:01.392  INFO 20364 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 21:55:01.394  INFO 20364 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 21:55:01.449  INFO 20364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 21:55:01.675  INFO 20364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 21:55:02.027  WARN 20364 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 21:55:02.270  INFO 20364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 21:55:02.621  INFO 20364 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 21:55:02.632  INFO 20364 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 21:55:02.632  INFO 20364 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 21:55:02.633  INFO 20364 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 21:55:02.634  INFO 20364 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 21:55:02.634  INFO 20364 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 21:55:02.634  INFO 20364 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 21:55:02.634  INFO 20364 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@1d289d3f
+2017-10-13 21:55:03.378  INFO 20364 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:54:58 CST 2017]; root of context hierarchy
+2017-10-13 21:55:03.473  INFO 20364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 21:55:03.476  INFO 20364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 21:55:03.477  INFO 20364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 21:55:03.516  INFO 20364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:55:03.516  INFO 20364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:55:03.569  INFO 20364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 21:55:03.630  WARN 20364 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 21:55:04.306  INFO 20364 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 21:55:04.307  INFO 20364 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 21:55:04.314  INFO 20364 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 21:55:04.324  INFO 20364 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 21:55:04.341  INFO 20364 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 6.415 seconds (JVM running for 7.518)
+2017-10-13 21:55:04.431  INFO 20364 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 21:54:58 CST 2017]; root of context hierarchy
+2017-10-13 21:55:04.433  INFO 20364 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 21:55:04.437  INFO 20364 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 21:55:04.437  INFO 20364 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 21:55:04.438  INFO 20364 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 21:55:04.438  INFO 20364 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 21:55:04.439  INFO 20364 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 22:14:40.529 ERROR 19252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG    for 'com.hcicloud.sap'
+2017-10-13 22:14:40.531 ERROR 19252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2017-10-13 22:14:40.532 ERROR 19252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG     for 'org.hibernate'
+2017-10-13 22:14:40.532 ERROR 19252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: TRACE     for 'org.hibernate.type.descriptor.sql.BasicExtractor'
+2017-10-13 22:14:40.532 ERROR 19252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO     for 'null'
+2017-10-13 22:14:40.638  INFO 19252 --- [main] com.hcicloud.sap.SapApplicationTests     : Starting SapApplicationTests on menghaonan with PID 19252 (started by menghaonan in D:\IdeaProjects\springBoot\sap)
+2017-10-13 22:14:40.639  INFO 19252 --- [main] com.hcicloud.sap.SapApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-13 22:14:41.022  INFO 19252 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 22:14:41 CST 2017]; root of context hierarchy
+2017-10-13 22:14:43.584  INFO 19252 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema.sql]
+2017-10-13 22:14:43.621  INFO 19252 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema.sql] in 36 ms.
+2017-10-13 22:14:43.623  INFO 19252 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2017-10-13 22:14:43.632  INFO 19252 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 8 ms.
+2017-10-13 22:14:43.800  INFO 19252 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-13 22:14:43.832  INFO 19252 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-13 22:14:43.941  INFO 19252 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-13 22:14:43.943  INFO 19252 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-10-13 22:14:43.946  INFO 19252 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-10-13 22:14:44.010  INFO 19252 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-13 22:14:44.328  INFO 19252 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-13 22:14:44.654  WARN 19252 --- [main] o.h.b.i.SessionFactoryBuilderImpl        : Unrecognized hbm2ddl_auto value : none    .  Supported values include create, create-drop, update, and validate.  Ignoring
+2017-10-13 22:14:44.960  INFO 19252 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-13 22:14:45.328  INFO 19252 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-10-13 22:14:45.346  INFO 19252 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-10-13 22:14:45.347  INFO 19252 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-10-13 22:14:45.348  INFO 19252 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-10-13 22:14:45.351  INFO 19252 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-10-13 22:14:45.352  INFO 19252 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2017-10-13 22:14:45.352  INFO 19252 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-10-13 22:14:45.353  INFO 19252 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.hcicloud.sap.quartz.MyJobFactory@3b11620a
+2017-10-13 22:14:46.081  INFO 19252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 22:14:41 CST 2017]; root of context hierarchy
+2017-10-13 22:14:46.173  INFO 19252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hcicloud.sap.controller.HelloController.index()
+2017-10-13 22:14:46.177  INFO 19252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-13 22:14:46.180  INFO 19252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-13 22:14:46.227  INFO 19252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 22:14:46.227  INFO 19252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 22:14:46.278  INFO 19252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-13 22:14:46.340  WARN 19252 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-13 22:14:47.085  INFO 19252 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-13 22:14:47.086  INFO 19252 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Will start Quartz Scheduler [scheduler] in 1 seconds
+2017-10-13 22:14:47.101  INFO 19252 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-13 22:14:47.108  INFO 19252 --- [main] c.hcicloud.sap.quartz.ScheduleListener   : 定时任务监听器，开始定时任务的调度
+2017-10-13 22:14:47.132  INFO 19252 --- [main] com.hcicloud.sap.SapApplicationTests     : Started SapApplicationTests in 6.921 seconds (JVM running for 7.743)
+2017-10-13 22:14:47.229  INFO 19252 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@16a0ee18: startup date [Fri Oct 13 22:14:41 CST 2017]; root of context hierarchy
+2017-10-13 22:14:47.231  INFO 19252 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-10-13 22:14:47.247  INFO 19252 --- [Thread-6] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2017-10-13 22:14:47.247  INFO 19252 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutting down.
+2017-10-13 22:14:47.247  INFO 19252 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED paused.
+2017-10-13 22:14:47.249  INFO 19252 --- [Thread-6] org.quartz.core.QuartzScheduler          : Scheduler scheduler_$_NON_CLUSTERED shutdown complete.
+2017-10-13 22:14:47.250  INFO 19252 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

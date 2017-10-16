@@ -62,7 +62,7 @@ public class VoiceServiceImpl implements VoiceService {
             searchString = searchString.substring(0, searchString.length() - 1);
         }
 //        searchString += "]}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"USER_PHONE\",\"CALL_CONTENT\"],\"sort\": {\"CREATE_TIME\": {\"order\": \"asc\",\"ignore_unmapped\":true}},"
-        searchString += "]}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"USER_PHONE\",\"CALL_CONTENT\"],"
+        searchString += "]}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"USER_PHONE\",\"CALL_CONTENT\"],\"sort\": {\"CALL_START_TIME\": {\"order\": \"asc\",\"ignore_unmapped\":true}},"
                 + "\"from\": "
                 + ph.getiDisplayStart()
                 + ",\"size\": "
@@ -158,7 +158,7 @@ public class VoiceServiceImpl implements VoiceService {
                 "}" +
                 "}" +
                 "]"+
-                "}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"TRANS_CONTENT\"],"
+                "}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"TRANS_CONTENT\"],\"sort\": {\"CALL_START_TIME\": {\"order\": \"asc\",\"ignore_unmapped\":true}},"
                 + "\"from\": "+ph.getiDisplayStart()+",\"size\": "+ph.getiDisplayLength()+"}";
 
         List<VoiceVo> list = new ArrayList<VoiceVo>();
@@ -253,7 +253,7 @@ public class VoiceServiceImpl implements VoiceService {
                 "}" +
                 "}" +
                 "]"+
-                "}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"TRANS_CONTENT\"],"
+                "}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"TRANS_CONTENT\"],\"sort\": {\"CALL_START_TIME\": {\"order\": \"asc\",\"ignore_unmapped\":true}},"
                 + "\"from\": "+ph.getiDisplayStart()+",\"size\": "+ph.getiDisplayLength()+"}";
         List<VoiceVo> list = new ArrayList<VoiceVo>();
         long total = 0l;
@@ -334,7 +334,7 @@ public class VoiceServiceImpl implements VoiceService {
         if(searchString.endsWith(",")){
             searchString = searchString.substring(0, searchString.length()-1);
         }
-        searchString+="]}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"CALL_CONTENT\"],"
+        searchString+="]}}]}},\"_source\": [\"VOICE_ID\",\"CALL_START_TIME\",\"CALL_CONTENT\"],\"sort\": {\"CALL_START_TIME\": {\"order\": \"asc\",\"ignore_unmapped\":true}},"
                 + "\"from\": "+ph.getiDisplayStart()+",\"size\": "+ph.getiDisplayLength()+"}";
 
         List<VoiceVo> list = new ArrayList<VoiceVo>();

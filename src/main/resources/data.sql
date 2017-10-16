@@ -3,7 +3,7 @@ insert into config(id,cron) values(2,'0 30 0 * * ?');
 insert into config(id,cron) values(3,'0 30 0 * * ?');
 insert into config(id,cron) values(4,'80');
 insert into config(id,cron) values(5,'2017-09-24 00:00:00');
-insert into config(id,cron) values(6,'on');
+insert into config(id,cron) values(6,'off');
 insert into config(id,cron) values(7,'0 30 22 * * ?');
 insert into config(id,cron) values(8,'365');
 insert into config(id,cron) values(9,'2017-09-24 00:00:00');
