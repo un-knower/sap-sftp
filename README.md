@@ -25,6 +25,7 @@ sftp的方式推送成功单，防骚扰转译后的话者分离文本，在合�
   http://10.137.87.153:7902/h2-console
   登录密码为：123456
 附上图片说明：
+![sap-sftp H2数据库](http://upload-images.jianshu.io/upload_images/539247-9a5e582cdccf53cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 小程序主要是通过设置的定时任务启动，执行的job分别为SuccessVoiveJob,FsrVoiceJob,CurrentVoiceJob,SuccessHistoryJob,FsrHistoryJob，分别对应于成功单录音文本推送，防骚扰录音文本推送，实时录音文本推送，历史成功单文本推送，历史防骚扰文本推送
 
