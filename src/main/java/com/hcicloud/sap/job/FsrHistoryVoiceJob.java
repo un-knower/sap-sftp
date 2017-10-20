@@ -122,9 +122,9 @@ public class FsrHistoryVoiceJob implements Job {
                         if(!successFtpVoicePath.endsWith(File.separator)){
                             successFtpVoicePath += File.separator;
                         }
-                        localPathUnZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + nowTime.get(Calendar.DAY_OF_MONTH) + File.separator + unzipName + File.separator;
-                        localPathZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + nowTime.get(Calendar.DAY_OF_MONTH) + File.separator + zipName + File.separator;
-                        remoteName = remoteVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + nowTime.get(Calendar.DAY_OF_MONTH) + File.separator;
+                        localPathUnZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + (nowTime.get(Calendar.DAY_OF_MONTH) < 10 ?  "0" + nowTime.get(Calendar.DAY_OF_MONTH) : nowTime.get(Calendar.DAY_OF_MONTH)) + File.separator + unzipName + File.separator;
+                        localPathZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + (nowTime.get(Calendar.DAY_OF_MONTH) < 10 ?  "0" + nowTime.get(Calendar.DAY_OF_MONTH) : nowTime.get(Calendar.DAY_OF_MONTH)) + File.separator + zipName + File.separator;
+                        remoteName = remoteVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + (nowTime.get(Calendar.DAY_OF_MONTH) < 10 ?  "0" + nowTime.get(Calendar.DAY_OF_MONTH) : nowTime.get(Calendar.DAY_OF_MONTH)) + File.separator;
                         if (!FileUtils.isFolderExist(localPathUnZip)) {
                             FileUtils.makeDirs(localPathUnZip);
                         }
