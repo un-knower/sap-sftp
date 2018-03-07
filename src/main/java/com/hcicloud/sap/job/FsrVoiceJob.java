@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Configuration
@@ -53,6 +54,11 @@ public class FsrVoiceJob implements Job {
 
         //定义一个当前时间
         Calendar nowTime = Calendar.getInstance();
+        //2017年11月15日 16:02:41
+        //定义默认去前一天的时间
+        Date lastNowtime = DateConversion.getDayBeforeBegin(nowTime.getTime(),1);
+        Calendar calendarLast = Calendar.getInstance();
+        calendarLast.setTime(lastNowtime);
         //本地文件名
         String localName = "";
         //本地解压目录
@@ -102,6 +108,11 @@ public class FsrVoiceJob implements Job {
                 localPathUnZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + ((nowTime.get(Calendar.DAY_OF_MONTH)-1) < 10 ?  "0" + (nowTime.get(Calendar.DAY_OF_MONTH)-1) : (nowTime.get(Calendar.DAY_OF_MONTH)-1)) + File.separator + unzipName + File.separator;
                 localPathZip = successFtpVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + ((nowTime.get(Calendar.DAY_OF_MONTH)-1) < 10 ?  "0" + (nowTime.get(Calendar.DAY_OF_MONTH)-1) : (nowTime.get(Calendar.DAY_OF_MONTH)-1)) + File.separator + zipName + File.separator;
                 remoteName = remoteVoicePath + nowTime.get(Calendar.YEAR) + File.separator + ((nowTime.get(Calendar.MONTH)+1) < 10 ?  "0" + (nowTime.get(Calendar.MONTH)+1) :  (nowTime.get(Calendar.MONTH)+1)) + File.separator + ((nowTime.get(Calendar.DAY_OF_MONTH)-1) < 10 ?  "0" + (nowTime.get(Calendar.DAY_OF_MONTH)-1) : (nowTime.get(Calendar.DAY_OF_MONTH)-1)) + File.separator;
+
+                //2017年11月15日 16:06:16    修改文件夹显示时间
+                localPathUnZip = successFtpVoicePath + calendarLast.get(Calendar.YEAR) + File.separator + ((calendarLast.get(Calendar.MONTH)+1) < 10 ?  "0" + (calendarLast.get(Calendar.MONTH)+1) :  (calendarLast.get(Calendar.MONTH)+1)) + File.separator + ((calendarLast.get(Calendar.DAY_OF_MONTH)) < 10 ?  "0" + (calendarLast.get(Calendar.DAY_OF_MONTH)) : (calendarLast.get(Calendar.DAY_OF_MONTH))) + File.separator + unzipName + File.separator;
+                localPathZip = successFtpVoicePath + calendarLast.get(Calendar.YEAR) + File.separator + ((calendarLast.get(Calendar.MONTH)+1) < 10 ?  "0" + (calendarLast.get(Calendar.MONTH)+1) :  (calendarLast.get(Calendar.MONTH)+1)) + File.separator + ((calendarLast.get(Calendar.DAY_OF_MONTH)) < 10 ?  "0" + (calendarLast.get(Calendar.DAY_OF_MONTH)) : (calendarLast.get(Calendar.DAY_OF_MONTH))) + File.separator + zipName + File.separator;
+                remoteName = remoteVoicePath + calendarLast.get(Calendar.YEAR) + File.separator + ((calendarLast.get(Calendar.MONTH)+1) < 10 ?  "0" + (calendarLast.get(Calendar.MONTH)+1) :  (calendarLast.get(Calendar.MONTH)+1)) + File.separator + ((calendarLast.get(Calendar.DAY_OF_MONTH)) < 10 ?  "0" + (calendarLast.get(Calendar.DAY_OF_MONTH)) : (calendarLast.get(Calendar.DAY_OF_MONTH))) + File.separator;
                 if (!FileUtils.isFolderExist(localPathUnZip)) {
                     FileUtils.makeDirs(localPathUnZip);
                 }
