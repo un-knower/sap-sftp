@@ -6,6 +6,7 @@ public class Encrypt
     public static void main(String[] args)
     {
         args = "123456".split(",");
+        System.out.println("输入的值为：" + args[0]);
         if ((args == null) || (args.length != 1))
         {
             System.out.println("Parameter error . You can use a string as parameter . ");
